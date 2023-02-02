@@ -202,7 +202,7 @@ width값을 3등분하고 간격 10씩 잡히도록 설정*/
 
 @media screen and (max-width:430px) {
     .cont01 .list .item {
-        width: calc(100% / 3 -10px);
+        width: calc(100% / 3 - 10px);
     }
 
     .cont01 .list .item:nth-child(4) {
