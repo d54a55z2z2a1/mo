@@ -190,3 +190,22 @@ header nav ul li {
 }
 
 /* 뷰포트 1280px 이하일 때 스타일적용*/
+
+@media screen and (max-width: 1280px) {
+    .inner {width:calc(100% - 40px);}
+}
+
+/* 뷰포트가 430px 이하일 때 
+.cont01 .list .item중에서
+마지막에 있는 item은 삭제
+width값을 3등분하고 간격 10씩 잡히도록 설정*/
+
+@media screen and (max-width:430px) {
+    .cont01 .list .item {
+        width: calc(100% / 3 -10px);
+    }
+
+    .cont01 .list .item:nth-child(4) {
+        display: none;
+    }
+}
