@@ -1,0 +1,189 @@
+@charset "utf-8" ;
+@font-face {
+    font-family: 'OKDDUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    font-family: 'OKDDUNG';
+    
+}
+
+.inner {
+    width: calc(100% - 40px); /* 양쪽 여백 20px */
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+header {
+    
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header nav ul {
+    display: flex;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+/* 💛.main_visual */
+
+.main_visual {
+    background-color: #ffc451;
+    height: 295px;
+    border-radius: 0 0 70px 70px;
+    box-shadow: 0 4px 45px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.main_visual figure {
+    width: calc(100% - 40px);
+    height: 110px;
+    border-radius: 70px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+/* 💛.cont01 */
+
+.cont01 {
+    padding-top: 60px;
+}
+
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cont01 .list .item {
+    width: calc(100% / 4 - 10px); /* 화면전체에서 4개로 나누고 간격을 10px씩 띄어준다 */
+}
+
+.cont01 .list .item p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cont01 .list .item figure {
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cont01 .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 💛.cont02 */ 
+
+.cont02 {
+    padding-top: 50px;
+}
+
+.cont02 .list {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    padding: 0 20px;    
+}
+
+.cont02 .list figure {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 102px;
+    height: 124px;
+    margin-right: 11px;
+}
+
+.cont02 .list figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont02 .list .info p {
+    font-size: 14px;
+    margin: 3px 0 5px;
+}
+
+.cont02 .list .info div span {
+    font-size: 14px;
+}
+
+/* 💛.bottom_menu */
+
+.bottom_menu {
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0 0 ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.bottom_menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       
+    height: 100%; 
+}
+
+.bottom_menu ul li img {
+    padding: 0 40px;
+}
+
+.bottom_menu ul li a {
+    display: flex;
+}
