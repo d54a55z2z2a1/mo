@@ -25,12 +25,13 @@ body {
     line-height: 1;
     color: #333;
     font-family: 'OKDDUNG';
-    
+    margin-bottom: 60px;
 }
 
 .inner {
-    width: calc(100% - 40px); /* 양쪽 여백 20px */
+    /* width: calc(100% - 40px); /* 양쪽 여백 20px */
     margin: 0 auto;
+    width: 1280px;
 }
 
 .title {
@@ -187,3 +188,5 @@ header nav ul li {
 .bottom_menu ul li a {
     display: flex;
 }
+
+/* 뷰포트 1280px 이하일 때 스타일적용*/
