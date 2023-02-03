@@ -1,0 +1,96 @@
+@charset "utf-8" ;
+
+/* sub파일 안에서 header변경 */
+
+header {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+}
+
+/* 💛.cont01  */
+.cont01 {
+    padding-top: 60px;
+}
+
+.cont01 .list {
+    width: 100%;
+    /* 위더스 값 잡아버리면 일정크기에 화면이 잡혀버린다. 그렇기에 퍼센트사용 */
+    height: 160px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* x축, y축, 불러 */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.cont01 .list figure {
+    width: 102px;
+    height: 124px;
+    border-radius: 10px;
+}
+
+.cont01 .list figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont01 .list .info {
+    margin-left: 11px;
+}
+
+.cont01 .list .info p {
+    font-size: 14px;
+    margin: 3px 0 20px;
+}
+
+.cont01 .list .info a /* a요소는 인라인요소 */ {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+    font-size: 14px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+}
+
+/* 💛.cont02 */
+
+.cont02 {
+    padding-top: 50px;
+    
+}
+
+.cont02 .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* 공간이 부족하면 밑으로 떨어지도록 만들어준다 */
+}
+
+.cont02 .list .item {
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 25px;
+}
+
+.cont02 .list .item figure {
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cont02 .list .item figure img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.cont02 .list .item p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
